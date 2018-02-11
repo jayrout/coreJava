@@ -1,0 +1,17 @@
+package com.constructors;
+
+public class Trainee {
+	int traineeId;
+	String traineeName;
+	String trainingCourse;
+	String preferedLocation;
+	String deploymentLocation;
+
+	public void displayTraineeDetails() {
+		System.out.println("Trainee ID " + traineeId);
+		System.out.println("Trainee name " + traineeName);
+		System.out.println("Training Course " + trainingCourse);
+		System.out.println("preferred Location " + preferedLocation);
+		System.out.println("deployement Location " + deploymentLocation);
+	}
+}

@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.session1.DefaultValuesDemo"/>
+<fullyQualifiedTypeName name="com.session1.Customer"/>
+<fullyQualifiedTypeName name="com.constructors.Employee"/>
+<fullyQualifiedTypeName name="com.constructors.Trainee"/>
+</qualifiedTypeNameHistroy>

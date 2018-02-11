@@ -1,0 +1,21 @@
+package com.constructors;
+import com.constructors.Employee;
+
+public class EmployeemainApp {
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		Employee employee = new Employee();
+		System.out.println(employee);
+		employee.displayEmployeeDetails();
+
+		Employee employee2 = new Employee(); // same
+		System.out.println("");
+		System.out.println(employee2);
+		employee2.displayEmployeeDetails();
+
+		Employee employee3 = new Employee(102, "JP", "Full Time", 12, 6000,
+				"anc2123");
+		employee3.displayEmployeeDetails();
+		System.out.println("End of Main");
+	}
+}

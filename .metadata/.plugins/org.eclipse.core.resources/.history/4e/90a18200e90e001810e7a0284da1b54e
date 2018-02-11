@@ -1,0 +1,12 @@
+package com.constructors;
+
+public class ThisDemo {
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		Trainee trainee = new Trainee(103, "Jay", "JAVA", "Dallas",
+				"San Antonio");
+		trainee.displayTraineeDetails();
+
+		System.out.println("End of Main Method");
+	}
+}

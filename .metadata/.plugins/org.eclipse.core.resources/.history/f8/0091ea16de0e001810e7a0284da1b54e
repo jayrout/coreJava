@@ -1,0 +1,14 @@
+package com.constructors;
+
+public class Employee {
+	int empNumber;
+	String empName;
+	String empType;
+	int empDeptNumber;
+	double empBasic;
+	String empPassWord;
+
+	public void displayEmployeeDetails() {
+
+	}
+}

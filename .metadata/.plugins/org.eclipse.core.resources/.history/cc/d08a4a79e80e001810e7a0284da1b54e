@@ -1,0 +1,10 @@
+package com.constructors;
+
+public class Trainee {
+	int TraineeId;
+	String traineeName;
+	String trainingCourse;
+	String preferedLocation;
+	String deploymentLocation;
+
+}

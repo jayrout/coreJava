@@ -1,0 +1,50 @@
+package com.constructors;
+
+public class Trainee {
+	int traineeId;
+	String traineeName;
+	String trainingCourse;
+	String preferedLocation;
+	String deploymentLocation;
+
+	public Trainee() {
+		System.out.println("From Default Constructor");
+	}
+
+	public void displayTraineeDetails() {
+		System.out.println("*************************************");
+		System.out.println("Trainee ID " + traineeId);
+		System.out.println("Trainee name " + traineeName);
+		System.out.println("Training Course " + trainingCourse);
+		System.out.println("preferred Location " + preferedLocation);
+		System.out.println("deployement Location " + deploymentLocation);
+		System.out.println("*************************************");
+	}
+
+	/**
+	 * @param traineeId
+	 * @param traineeName
+	 * @param trainingCourse
+	 */
+	public Trainee(int traineeId, String traineeName, String trainingCourse) {
+		this.traineeId = traineeId;
+		this.traineeName = traineeName;
+		this.trainingCourse = trainingCourse;
+	}
+
+	/**
+	 * @param traineeId
+	 * @param traineeName
+	 * @param trainingCourse
+	 * @param preferedLocation
+	 * @param deploymentLocation
+	 */
+	public Trainee(int traineeId, String traineeName, String trainingCourse,
+			String preferedLocation, String deploymentLocation) {
+		this.traineeId = traineeId;
+		this.traineeName = traineeName;
+		this.trainingCourse = trainingCourse;
+		this.preferedLocation = preferedLocation;
+		this.deploymentLocation = deploymentLocation;
+	}
+}

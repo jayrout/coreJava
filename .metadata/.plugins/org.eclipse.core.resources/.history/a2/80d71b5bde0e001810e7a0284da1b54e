@@ -1,0 +1,9 @@
+import com.constructors.Employee;
+
+public class EmployeemainApp {
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		employee.displayEmployeeDetails();
+		System.out.println("End of Main");
+	}
+}
