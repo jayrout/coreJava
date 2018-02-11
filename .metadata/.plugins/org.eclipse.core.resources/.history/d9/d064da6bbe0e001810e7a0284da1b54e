@@ -1,0 +1,39 @@
+package com.session1;
+
+public class Customer { // Business Logic Class
+	int customerId; // Data members
+	String customerName;
+	private String customerPassword;
+	String customerCity;
+
+	/**
+	 * @return the customerPassword
+	 */
+	public String getCustomerPassword() {
+		return customerPassword;
+	}
+
+	/**
+	 * @param customerPassword
+	 *            the customerPassword to set
+	 */
+	public void setCustomerPassword(String customerPassword) {
+		this.customerPassword = customerPassword;// this keyword at variable
+													// level
+		// whenever the formal parameter name and instance variable name is same
+		// there ambiguity
+	}
+
+	public void initializeCustomerDetails(int customerId, String customerName,
+			String customerPassword, String customerCity) {
+
+	}
+
+	public void displayCustomerDetails() {
+		System.out.println("***************************");
+		System.out.println("Customer ID " + customerId);
+		System.out.println("Customer name" + "\t" + customerName);
+		System.out.println("Customer City " + customerCity);
+		System.out.println("****************************");
+	}
+}

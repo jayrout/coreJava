@@ -1,0 +1,17 @@
+package com.session1;
+
+public class CustomerMainApp { // Execution Logic Class
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		Customer customer = new Customer();
+		System.out.println(customer);
+		customer.displayCustomerDetails();
+		customer.customerId = 111;
+		customer.customerName = "Jay";
+		customer.customerCity = "Dallas";
+		customer.customerPassword = "Abc@123";
+
+		System.out.println("End of Main Method");
+	}
+
+}

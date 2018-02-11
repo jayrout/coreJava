@@ -1,0 +1,9 @@
+package com.session1;
+
+public class Customer {
+    int customerId;
+    String customerName;
+    String customerPassword;
+    String customerCity;
+    
+}

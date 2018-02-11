@@ -1,0 +1,16 @@
+package com.session1;
+
+public class Customer {
+	int customerId;    //Data members
+	String customerName;
+	String customerPassword;
+	String customerCity;
+
+	 public void displayCustomerDetails(){
+		 System.out.println("***************************");
+		 System.out.println("Customer ID "+ customerId);
+		 System.out.println("Customer name"+"\t"+ customerName);
+		 System.out.println("Customer City "+ customerCity);
+		 System.out.println("****************************");
+	 }
+}
