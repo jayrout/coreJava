@@ -1,0 +1,19 @@
+package com.staticandinstance;
+
+public class SingletonDemo {
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		SingletonExample singletoninstance = SingletonExample.getInstance();
+		System.out.println(singletoninstance);
+		singletoninstance.loadUserDeatils();
+
+		SingletonExample singletoninstance2 = SingletonExample.getInstance(); // same
+																				// instance
+																				// as
+																				// above
+		System.out.println(singletoninstance2);
+		singletoninstance2.loadUserDeatils();
+
+		System.out.println("End of main method");
+	}
+}

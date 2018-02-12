@@ -1,0 +1,9 @@
+package com.staticandinstance;
+
+public class SingletonDemo {
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		
+		System.out.println("End of main method");
+	}
+}

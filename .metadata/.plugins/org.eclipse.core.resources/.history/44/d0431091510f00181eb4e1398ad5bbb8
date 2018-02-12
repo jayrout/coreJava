@@ -1,0 +1,5 @@
+package com.staticandinstance;
+
+public class SingletonExample {
+private static SingletonExample singletonObject;
+}

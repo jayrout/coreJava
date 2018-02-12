@@ -1,0 +1,29 @@
+package com.staticandinstance;
+
+public class SingletonExample {
+	private static SingletonExample singletonObject;
+
+	private SingletonExample() {
+		// if it private, we can't access outside class, so can't create object
+		// outside
+	}
+
+	public static SingletonExample getInstance() { // load this method one time
+													// since it is static
+		if (singletonObject == null) {
+			System.out.println("I am from if condition");
+			singletonObject = new SingletonExample();
+		}
+		return singletonObject;
+	}
+
+	public void loadUserDeatils() {
+		// some JDBC Code
+		System.out.println("User Name " + "Admin" + "\t" + "Password "
+				+ "Admin@123");
+		System.out.println("User Name " + "Admin2" + "\t" + "Password "
+				+ "Admin3@124");
+		System.out.println("User Name " + "Admin3" + "\t" + "Password "
+				+ "Admin2@125");
+	}
+}

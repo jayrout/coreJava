@@ -1,0 +1,18 @@
+package com.staticandinstance;
+
+public class SingletonExample {
+	private static SingletonExample singletonObject;
+
+	public static SingletonExample getInstance() {
+		if (singletonObject == null) {
+			singletonObject = new SingletonExample();
+		}
+		return singletonObject;
+	}
+
+	public void loadUserDeatils() {
+		// some JDBC Code
+		System.out.println("User Name" + "Admin" + "\t" + "Passwprd "
+				+ "Admin@123");
+	}
+}

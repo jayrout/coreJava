@@ -1,0 +1,16 @@
+package com.staticandinstance;
+
+public class SingletonExample {
+	private static SingletonExample singletonObject;
+
+	public static SingletonExample getInstance() {
+		if (singletonObject == null) {
+			singletonObject = new SingletonExample();
+		}
+		return singletonObject;
+	}
+
+	public void displayCourseDeatils() {
+
+	}
+}

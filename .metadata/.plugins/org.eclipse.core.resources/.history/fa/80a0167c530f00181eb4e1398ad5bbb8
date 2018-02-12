@@ -1,0 +1,23 @@
+package com.staticandinstance;
+
+public class SingletonDemo {
+	public static void main(String[] args) {
+		System.out.println("I am from Main Method");
+		SingletonExample singletoninstance = SingletonExample.getInstance();
+		System.out.println(singletoninstance);
+		singletoninstance.loadUserDeatils();
+
+		// same instance as above
+		SingletonExample singletoninstance2 = SingletonExample.getInstance();
+		System.out.println(singletoninstance2);
+		singletoninstance2.loadUserDeatils();
+
+		// we are able to create another object by constructor
+		// so to make it exact singleton, prohibit it to create another
+		// object
+		SingletonExample singletoninstance3 = new SingletonExample();
+		System.out.println(singletoninstance3);
+		singletoninstance3.loadUserDeatils();
+		System.out.println("End of main method");
+	}
+}

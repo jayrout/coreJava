@@ -1,0 +1,31 @@
+package com.staticandinstance;
+
+public class StaticDemo {
+	public void f1() {
+		System.out.println("I am from f1 instance Method");
+	}
+
+	public void f2() {
+		System.out.println("I am from f2 instance method");
+		f2(); // Rule 1- we can call one instance method from another instance
+				// method using the name directly if they are in the same class
+		f3();// Rule4 - Static is already in memory // if in the same class we
+				// can directly call otherwise classname.methodname
+		double b = Math.round(10.2354d); // rule 4
+	}
+
+	public static void f3() {
+		System.out.println("I am from f3 static Method");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Main Method Start");
+		f3();// Rule 2- we can call one static method from another static method
+				// directly in the same class
+		// f2(); can't call as static scope and instance scope are different
+		StaticDemo demo = new StaticDemo();
+		demo.f2(); // Rule 3 , - to call instance method from static method, use
+					// object reference
+		System.out.println("End of main method");
+	}
+}
