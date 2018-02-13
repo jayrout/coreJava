@@ -1,0 +1,9 @@
+package com.inheritance;
+
+public class Employee {
+	int empNumber;
+	String empname;
+	String empJob;
+	private String empPassword;
+	int deptNumber;
+}

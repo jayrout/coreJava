@@ -1,0 +1,15 @@
+package com.inheritance;
+
+import java.util.Scanner;
+
+public class DynamicBindingExample {
+	public static void main(String[] args) {
+		System.out.println("I am from main method");
+		// As per inheritance, subclass object should be created first
+		// But Dynamic bind suggests to create reference of Base Class
+		Employee employee = null;
+		System.out.println("Enter the type of Employee");
+		Scanner scanner = new Scanner(System.in); 
+		// System.in represents keyboard
+	}
+}

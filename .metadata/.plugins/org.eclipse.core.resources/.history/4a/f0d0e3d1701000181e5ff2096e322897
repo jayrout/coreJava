@@ -1,0 +1,50 @@
+package com.inheritance;
+
+public abstract class Employee {
+	int empNumber;
+	String empname;
+	String empJob;
+	private String empPassword;
+	int deptNumber;
+
+	/**
+	 * @param empNumber
+	 * @param empname
+	 * @param empJob
+	 * @param empPassword
+	 * @param deptNumber
+	 */
+	public Employee(int empNumber, String empname, String empJob,
+			String empPassword, int deptNumber) {
+		this.empNumber = empNumber;
+		this.empname = empname;
+		this.empJob = empJob;
+		this.empPassword = empPassword;
+		this.deptNumber = deptNumber;
+	}
+
+	/**
+	 * @return the empPassword
+	 */
+	public String getEmpPassword() {
+		return empPassword;
+	}
+
+	/**
+	 * @param empPassword
+	 *            the empPassword to set
+	 */
+	public void setEmpPassword(String empPassword) {
+		this.empPassword = empPassword;
+	}
+public abstract void doSalaryCalculation();
+	public void displaySalaryStatement() {
+		System.out.println("********************************************");
+		System.out.println("Employee Number:" + "\t" + empNumber);
+		System.out.println("Employee name " + empname);
+		System.out.println("Employee Job " + empJob);
+		System.out.println("Employee Department Number " + deptNumber);
+
+	}
+
+}

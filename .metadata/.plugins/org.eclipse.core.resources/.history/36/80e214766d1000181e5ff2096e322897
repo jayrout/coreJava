@@ -1,0 +1,7 @@
+package com.inheritance;
+
+public class ContractEmployee extends Employee{
+float perDaySalary;
+float numberOfDays;
+
+}

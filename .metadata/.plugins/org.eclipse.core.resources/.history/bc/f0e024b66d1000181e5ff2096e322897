@@ -1,0 +1,26 @@
+package com.inheritance;
+
+public class ContractEmployee extends Employee {
+	float perDaySalary;
+	float numberOfDays;
+
+	/**
+	 * @param empNumber
+	 * @param empname
+	 * @param empJob
+	 * @param empPassword
+	 * @param deptNumber
+	 * @param perDaySalary
+	 * @param numberOfDays
+	 */
+	public ContractEmployee(int empNumber, String empname, String empJob,
+			String empPassword, int deptNumber, float perDaySalary,
+			float numberOfDays) {
+		super(empNumber, empname, empJob, empPassword, deptNumber);
+		// Super At Constructor Level
+		System.out.println("From Contract Employee Constructor");
+		this.perDaySalary = perDaySalary;
+		this.numberOfDays = numberOfDays;
+	}
+
+}

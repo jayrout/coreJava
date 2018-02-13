@@ -1,0 +1,14 @@
+package com.inheritance;
+
+public class InheritanceExampleApp {
+	public static void main(String[] args) {
+		System.out.println("Main Method start");
+		PermanentEmp pEmp = new PermanentEmp(100, "jay", "Devloper", "Abc@123",
+				10, 6000, 2530.25d);
+		pEmp.doSalaryCalculation();
+		pEmp.displaySalaryStatement();
+		pEmp.setEmpPassword("XYZ@123");
+		System.out.println(pEmp.getEmpPassword());
+		System.out.println("End of Main");
+	}
+}

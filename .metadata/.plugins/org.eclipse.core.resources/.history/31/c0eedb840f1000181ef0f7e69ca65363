@@ -1,0 +1,145 @@
+package com.marlabs.collections.activity;
+
+import java.io.Serializable;
+
+/**
+ * @author srinivasa.challa
+ *
+ */
+@SuppressWarnings("serial")
+public final class SingleAddress implements Serializable {
+	private String lastName;
+	private String firstName;
+	private String streetName;
+	private String cityName;
+	private String state;
+	private long pinCode;
+
+	@SuppressWarnings("unused")
+	private SingleAddress() {
+
+	}
+
+	/**
+	 * @param lastName
+	 * @param firstName
+	 * @param streetName
+	 * @param cityName
+	 * @param state
+	 * @param pinCode
+	 */
+	public SingleAddress(String lastName, String firstName, String streetName,
+			String cityName, String state, long pinCode) {
+		this.lastName = lastName;
+		this.firstName = firstName;
+		this.streetName = streetName;
+		this.cityName = cityName;
+		this.state = state;
+		this.pinCode = pinCode;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "SingleAddress [lastName=" + lastName + ", firstName="
+				+ firstName + ", streetName=" + streetName + ", cityName="
+				+ cityName + ", state=" + state + ", pinCode=" + pinCode + "]";
+	}
+
+	/**
+	 * @return the lastName
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
+
+	/**
+	 * @return the streetName
+	 */
+	public String getStreetName() {
+		return streetName;
+	}
+
+	/**
+	 * @return the cityName
+	 */
+	public String getCityName() {
+		return cityName;
+	}
+
+	/**
+	 * @return the state
+	 */
+	public String getState() {
+		return state;
+	}
+
+	/**
+	 * @return the pinCode
+	 */
+	public long getPinCode() {
+		return pinCode;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result
+				+ ((lastName == null) ? 0 : lastName.hashCode());
+		return result;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof SingleAddress)) {
+			return false;
+		}
+		SingleAddress other = (SingleAddress) obj;
+		if (firstName == null) {
+			if (other.firstName != null) {
+				return false;
+			}
+		} else if (!firstName.equals(other.firstName)) {
+			return false;
+		}
+		if (lastName == null) {
+			if (other.lastName != null) {
+				return false;
+			}
+		} else if (!lastName.equals(other.lastName)) {
+			return false;
+		}
+		return true;
+	}
+
+}

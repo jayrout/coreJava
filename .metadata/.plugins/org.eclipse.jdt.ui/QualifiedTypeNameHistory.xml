@@ -4,4 +4,21 @@
 <fullyQualifiedTypeName name="com.session1.Customer"/>
 <fullyQualifiedTypeName name="com.constructors.Employee"/>
 <fullyQualifiedTypeName name="com.constructors.Trainee"/>
+<fullyQualifiedTypeName name="com.staticandinstance.StaticDemo"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.staticandinstance.SingletonExample"/>
+<fullyQualifiedTypeName name="junit.framework.TestCase"/>
+<fullyQualifiedTypeName name="com.junit.testclasses.BasicCalculatorTest"/>
+<fullyQualifiedTypeName name="com.junit.examples.NegativeNumberException"/>
+<fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+<fullyQualifiedTypeName name="com.junit.examples.BasicCalculator"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.junit.After"/>
+<fullyQualifiedTypeName name="org.junit.Ignore"/>
+<fullyQualifiedTypeName name="activity.AddressBook"/>
+<fullyQualifiedTypeName name="activity.AddressBookImpl"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="activity.SingleAddress"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
 </qualifiedTypeNameHistroy>

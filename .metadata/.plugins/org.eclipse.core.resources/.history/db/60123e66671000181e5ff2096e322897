@@ -1,0 +1,52 @@
+package com.junit.testclasses;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import activity.AddressBook;
+import activity.AddressBookImpl;
+import activity.DuplicateAddressException;
+import activity.SingleAddress;
+
+public class AddressBookImplTest {
+	private static AddressBook addressBook = null;
+
+	@BeforeClass
+	public static void init() {
+		System.out.println("From Init Method");
+		addressBook = new AddressBookImpl();
+	}
+
+	@AfterClass
+	public static void destroy() {
+		System.out.println("From Destroy Method");
+		addressBook = null;
+	}
+
+	public static void addAddressEntry() {
+		SingleAddress singleAddress = new SingleAddress("Rout", "Jay", "scss",
+				"Dallas", "TX", 75252);
+		try {
+			boolean result = addressBook.addAddressEntry(singleAddress);
+			assertTrue(result);
+		} catch (NullPointerException e) {
+			fail();
+		} catch (DuplicateAddressException e) {
+			fail();
+		}
+	}
+
+	@Test
+	public void testRemoveAddress() {
+		try {
+			boolean result = addressBook.removeAddressEntry(null);
+		} catch (NullPointerException e) {
+
+		}
+
+	}
+}

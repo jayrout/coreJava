@@ -1,0 +1,46 @@
+package com.junit.testclasses;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import activity.AddressBook;
+import activity.AddressBookImpl;
+import activity.SingleAddress;
+
+public class AddressBookImplTest {
+	private static AddressBook addressBook = null;
+
+	@BeforeClass
+	public static void init() {
+		System.out.println("From Init Method");
+		addressBook = new AddressBookImpl();
+	}
+
+	@AfterClass
+	public static void destroy() {
+		System.out.println("From Destroy Method");
+		addressBook = null;
+	}
+
+	public static void addAddressEntry() {
+		SingleAddress singleAddress = new SingleAddress("Rout", "Jay", "scss",
+				"Dallas", "TX", 75252);
+		try{
+			
+		}catch(NullPointerException e){
+			
+		}
+	}
+
+		@Test
+		public void testRemoveAddress(){
+			try{
+				boolean result =  addressBook.removeAddressEntry(null);
+			}catch(NullPointerException e){
+				
+			}
+			
+		}
+	}
+}

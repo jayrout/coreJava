@@ -1,0 +1,5 @@
+package com.junit.examples;
+
+public class NegativeNumberException extends Exception {
+
+}

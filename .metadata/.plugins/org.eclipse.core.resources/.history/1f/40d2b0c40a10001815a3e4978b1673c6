@@ -1,0 +1,49 @@
+package com.junit.testclasses;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.junit.examples.BasicCalculator;
+import com.junit.examples.NegativeNumberException;
+
+public class BasicCalculatorTest {
+	@SuppressWarnings("unused")
+	@Test
+	public void testAdd() {
+		BasicCalculator calculator = new BasicCalculator();
+		try {
+			int result = calculator.add(10, 20);
+			assertEquals(30, result);
+		} catch (NegativeNumberException e) {
+		fail();
+		}
+	}
+
+	@SuppressWarnings("unused")
+	@Test
+	public void testAdd1() {
+		BasicCalculator calculator = new BasicCalculator();
+		try {
+			int result = calculator.add(-10, 20);
+			// assertEquals(30, result);
+		} catch (NegativeNumberException e) {
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	@SuppressWarnings("unused")
+	@Test
+	public void testAdd2() {
+		BasicCalculator calculator = new BasicCalculator();
+		try {
+			int result = calculator.add(-10, -20);
+			// assertEquals(30, result);
+		} catch (NegativeNumberException e) {
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.junit.testclasses;
+
+public class AddressBookImplTest {
+
+}

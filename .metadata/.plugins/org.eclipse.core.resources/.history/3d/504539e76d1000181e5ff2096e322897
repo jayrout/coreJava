@@ -1,0 +1,48 @@
+package com.inheritance;
+
+public class ContractEmployee extends Employee {
+	float perDaySalary;
+	float numberOfDays;
+	double takeHomeSalary;
+
+	/**
+	 * @param empNumber
+	 * @param empname
+	 * @param empJob
+	 * @param empPassword
+	 * @param deptNumber
+	 * @param perDaySalary
+	 * @param numberOfDays
+	 */
+	public ContractEmployee(int empNumber, String empname, String empJob,
+			String empPassword, int deptNumber, float perDaySalary,
+			float numberOfDays) {
+		super(empNumber, empname, empJob, empPassword, deptNumber);
+		// Super At Constructor Level
+		System.out.println("From Contract Employee Constructor");
+		this.perDaySalary = perDaySalary;
+		this.numberOfDays = numberOfDays;
+	}
+
+	public void doSalaryCalculation() {
+		if (deptNumber == 10) {
+			takeHomeSalary = Math.round(perDaySalary * numberOfDays + 500);
+		} else if (deptNumber == 20) {
+			takeHomeSalary = Math.round(empBasic + empBasic * 0.30 + empBasic
+					* 0.30 + empCommission);
+		} else {
+			takeHomeSalary = Math.round(empBasic + empCommission);
+		}
+	}
+
+	@Override
+	public void displaySalaryStatement() {
+		// method overriding
+		// super at Method Level
+		super.displaySalaryStatement();
+		System.out.println("Emplyoyee Basic Salary : " + empBasic);
+		System.out.println("Emplyoyee Commission : " + empCommission);
+		System.out.println("Emplyoyee Take Home Salary : " + takeHomeSalary);
+		System.out.println("*************************************************");
+	}
+}
